@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from config import Config
 from models import db
@@ -13,7 +13,8 @@ def criar_app():
 
     db.init_app(app)
     
-    app.register_blueprint(tarefas_bp, url_prefix='/api')
+    app.register_blueprint(tarefas_bp)
+    
     return app
 
 if __name__ == '__main__':

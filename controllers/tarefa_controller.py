@@ -23,5 +23,5 @@ class TarefaController:
         pass    
 
     @staticmethod
-    def deletar_tarefa(tarefa_id):
+    def deletar_tarefa(self,tarefa_id: int):
         pass
