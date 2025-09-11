@@ -20,7 +20,7 @@ class TarefaController:
 
     @staticmethod
     def atualizar_tarefa(self, tarefa_id: int, dados:dict):
-        pass    
+        pass
 
     @staticmethod
     def deletar_tarefa(self,tarefa_id: int):
